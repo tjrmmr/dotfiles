@@ -37,11 +37,11 @@ set showmatch                           " 対応する括弧などをハイラ�
 set matchtime=3                         " 対応括弧のハイライト表示を3秒にする
 set matchpairs& matchpairs+=<:>         " 対応括弧に<と>を追加
 set backspace=indent,eol,start          " バックスペースでなんでも消せる
-"if has('unnamedplus')                   " クリップボードをデフォルトのレジスタとして指定
-"    set clipboard& clipboard+=unnamedplus,unnamed
-"else
-"    set clipboard& clipboard+=unnamed
-"endif
+if has('unnamedplus')                   " クリップボードをデフォルトのレジスタとして指定
+    set clipboard& clipboard+=unnamedplus,unnamed
+else
+    set clipboard& clipboard+=unnamed
+endif
 
 " 表示
 "set number                              " 行番号表示
