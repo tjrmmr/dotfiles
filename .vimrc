@@ -98,6 +98,8 @@ let g:netrw_altv=1
 let g:netrw_alto=1
 
 " for vim-plug
+" mkdir -p ~/.vim/{autoload,colors,plugged}
+" wget -O ~/.vim/autoload/plug.vim https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 if &compatible
     set nocompatible
 endif
@@ -109,10 +111,15 @@ Plug 'vim-scripts/Align'
 Plug 'vim-jp/vimdoc-ja'
 Plug 'jlanzarotta/bufexplorer'
 Plug 'will133/vim-dirdiff'
-Plug 'tpope/vim-markdown'
-Plug 'mattn/vim-maketable'
-Plug 'previm/previm'
-Plug 'davidhalter/jedi-vim'
+Plug 'prabirshrestha/vim-lsp'
+Plug 'mattn/vim-lsp-settings'
+Plug 'prabirshrestha/asyncomplete.vim'
+Plug 'prabirshrestha/asyncomplete-lsp.vim'
+"Plug 'tpope/vim-markdown'
+"Plug 'mattn/vim-maketable'
+"Plug 'previm/previm'
+"Plug 'davidhalter/jedi-vim'
+
 Plug 'w0ng/vim-hybrid', {'do': 'cp colors/* ~/.vim/colors/'}
 call plug#end()
 
