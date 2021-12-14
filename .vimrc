@@ -132,3 +132,29 @@ let g:previm_open_cmd = 'open -a Firefox'
 "if !argc()
 "    autocmd vimenter * NERDTree
 "endif
+
+" for Language Server
+let g:lsp_diagnostics_echo_cursor = 1
+let g:lsp_settings = {
+\   'pyls-all': {
+\       'workspace_config': {
+\           'pyls': {
+\               'configurationSources': ['flake8'],
+\               'plugins': {
+\                   'flake8': {
+\                       'enabled': 1
+\                   },
+\                   'mccabe': {
+\                       'enabled': 0
+\                   },
+\                   'pycodestyle': {
+\                       'enabled': 0
+\                   },
+\                   'pyflakes': {
+\                       'enabled': 0
+\                   },
+\               }
+\           }
+\       }
+\   }
+\ }
