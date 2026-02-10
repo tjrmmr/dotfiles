@@ -124,7 +124,7 @@ Plug 'w0ng/vim-hybrid', {'do': 'cp colors/* ~/.vim/colors/'}
 call plug#end()
 
 filetype plugin indent on
-syntax on
+syntax off
 
 set helplang=ja
 let g:previm_open_cmd = 'open -a Firefox'
