@@ -84,18 +84,18 @@ set modelines=5
 
 set viminfo='100,<100,s10,h
 
-au BufRead,BufNewFile *.md set filetype=markdown
+"au BufRead,BufNewFile *.md set filetype=markdown
 
 " for netrw
-let g:netrw_liststyle=1
-let g:netrw_altv=1
-let g:netrw_alto=1
-let g:netrw_banner=0
-let g:netrw_sizestyle="H"
-let g:netrw_timefmt="%Y/%m/%d(%a) %H:%M:%S"
-let g:netrw_preview=1
-let g:netrw_altv=1
-let g:netrw_alto=1
+"let g:netrw_liststyle=1
+"let g:netrw_altv=1
+"let g:netrw_alto=1
+"let g:netrw_banner=0
+"let g:netrw_sizestyle="H"
+"let g:netrw_timefmt="%Y/%m/%d(%a) %H:%M:%S"
+"let g:netrw_preview=1
+"let g:netrw_altv=1
+"let g:netrw_alto=1
 
 " for vim-plug
 " mkdir -p ~/.vim/{autoload,colors,plugged}
@@ -126,8 +126,8 @@ call plug#end()
 filetype plugin indent on
 syntax off
 
-set helplang=ja
-let g:previm_open_cmd = 'open -a Firefox'
+"set helplang=ja
+"let g:previm_open_cmd = 'open -a Firefox'
 
 "if !argc()
 "    autocmd vimenter * NERDTree
